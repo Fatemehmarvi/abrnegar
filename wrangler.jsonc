@@ -1,0 +1,26 @@
+
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "abrnegar",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-18",
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "d1_databases": [
+    {
+      "binding": "abrnegar_db",
+      "database_name": "abrnegar-db",
+      "database_id": "7538c16c-e064-4ab6-abc8-cb257684d648"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "triggers": {
+    "crons": [
+      "30 4 * * *"
+    ]
+  }
+}
